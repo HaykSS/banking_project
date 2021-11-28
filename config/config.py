@@ -9,6 +9,7 @@ def get_project_root() -> Path:
 
     return Path(__file__).parents[1]
 
+
 def config(config_db_file):
     section = 'postgresql'
     config_file_path = '../../config/' + config_db_file
