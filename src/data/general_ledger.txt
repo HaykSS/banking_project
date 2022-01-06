@@ -1,0 +1,15 @@
+ledger_id	reporting_type	reporting_level_first	reporting_level_second
+1	Balance sheet	Assets	Current account
+2	Balance sheet	Assets	Securities
+3	Balance sheet	Assets	Loans to customers
+4	Balance sheet	Liabilities and equity	On demand deposits
+5	Balance sheet	Liabilities and equity	Term deposits
+6	Balance sheet	Liabilities and equity	Borrowed loans
+7	Balance sheet	Liabilities and equity	Issued bonds
+8	Balance sheet	Liabilities and equity	Equity
+9	Profit & loss	Income	Interest income
+10	Profit & loss	Income	Commission income
+11	Profit & loss	Income	FX income
+12	Profit & loss	Expense	Interest expense
+13	Profit & loss	Expense	Commission expense
+14	Off Balance sheet	Off balance sheet	Received collateral

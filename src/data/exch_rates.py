@@ -50,13 +50,31 @@ for i in range(0, len(exchange_rates)):
 
 
 exch_rates = pd.DataFrame.from_dict(dict,orient='index')
+exch_rates = exch_rates.reset_index()
+
+
+
 today = date.today()
 exch_rates['start_date'] = pd.to_datetime('today').strftime("%Y/%m/%d")
 exch_rates['end_date'] = pd.to_datetime('today').strftime("%Y/%m/%d")
 
-exch_rates= exch_rates.reset_index()
+
 
 exch_rates.columns = ['currency_code','exchange_rate','start_date','end_date']
+
+
+
+
+amd_row = pd.DataFrame({"currency_code" : ["AMD"],
+                        "exchange_rate" : [1],
+                        "start_date" : [pd.to_datetime('today').strftime("%Y/%m/%d")],
+                        "end_date" : [pd.to_datetime('today').strftime("%Y/%m/%d")],
+
+})
+
+exch_rates = exch_rates.append(amd_row, ignore_index= True)
+
+
 
 np_rates = exch_rates.to_numpy()
 
